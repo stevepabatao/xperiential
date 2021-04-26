@@ -65,6 +65,10 @@ button {
   font-weight: 900;
 }
 
+.large-text {
+  font-size:42px;
+}
+
 .gray-text {
   font-family: "Montserrat";
   color: #1f2021;
