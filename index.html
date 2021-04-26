@@ -7,23 +7,23 @@
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:300,400,600,700&amp;lang=en" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css"/>
-<link rel="stylesheet" href="js/slick/slick.css" type="text/css"/>
-<link rel="stylesheet" href="js/slick/slick-theme.css" type="text/css" />
 
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="wave.css">
 <link rel="stylesheet" href="circle-nav.css">
+<link rel="stylesheet" href="js/easyScrollDots.css">
 
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
 <script src="main.js"></script>
 <script src="steps.js"></script>
+<script src="js/easyScrollDots.js"></script>
 
 <body>
 <header>
@@ -59,7 +59,7 @@
 </nav>
 
 <div class="d-flex flex-row p-2 justify-content-between ">
-  <div class="p-3 kd-on"><img src="images/Xperiential-High-Res-Logo.png" height="40" width="55"></div>
+  <div class="pl-3 kd-on" style="margin-top:-15px;margin-left:20px;"><img src="images/Xperiential-High-Res-Logo.png" height="40" width="55"></div>
   <div class="topnav" id="myTopnav">
     <a class="px-2" href=""></a>
     <a class="px-2" href="">Home</a>
@@ -72,29 +72,35 @@
     <a class="px-2" href="">Contact Us</a>  
     <a class="icon-link pl-3" href=""><img src="images/Login-account-icon.png" height="20" width="18"/></a>
     <a class="icon-link pr-3" href=""><img src="images/Cart-Icon.png" height="20" width="18"/></a>
-    <a class="btn" id="top-button" role="button" href="">Order Xpress Water Testing&reg;</a>
+    <button class="btn" id="top-button" role="button" href="">Order Xpress Water Testing&reg;</button>
   </div>
   </div>
 </div>
 
-<div class="jumbotron text-center" style="margin-top:200px;background-color:transparent;">
-  <h1>Water Is Precious - Know What's In Yours.&trade;</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+<!-- Scroll Indicator 1-->
+<div>
+  <div class="scroll-indicator" id="section01" data-scroll-indicator-title="First Section"></div>
+</div>
+
+<div class="jumbotron text-center" style="margin-top:180px;background-color:transparent;">
+  <h1 class="mb-5">Water Is Precious - Know What's In Yours.&trade;</h1>
+  <p class="lead gray-text-16" style="padding-left:20%;padding-right:20%;margin-bottom:50px;">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+    It uses utility classes for typography and spacing to space content out within the larger container.</p>
   <p>
-    <a class="btn" href="#" role="button">Order Xpress Water Testing&reg;</a>
-    <a class="btn-rev" href="#" role="button">Learn more</a>
+    <button class="btn" href="#" role="button">Order Xpress Water Testing&reg;</button>
+    <button class="btn-rev" href="#" role="button">Learn more</button>
   </p>
 </div>
 
 </header>
 
+
 <section class="px-md-4 mx-md-4 mb-4 text-lg-left dark-grey-text">
 <div class="row" style="margin-top:60px; margin-left:15%; margin-right:15%;margin-bottom:70px;">
 
   <div class="col-md-4 mt-4 mb-md-0">
-    <h3 class="font-weight-bold ">Do You Know Whats In Your Water?</h3>
-    <a class="btn btn-purple btn-md ml-0" href="#" role="button">Start now<i class="fa fa-gem ml-2"></i></a>
+    <h2 class="font-weight-bold ">Do You Know Whats In Your Water?</h2>
+    <a class="btn-line btn-md ml-0" href="#" role="button">Start now</a>
   </div>
 
   <div class="col-md-8 mt-4 mb-4 mb-md-0">
@@ -123,12 +129,17 @@
   </div>
 </section>
 
+<!-- Scroll Indicator 2-->
+<div>
+  <div class="scroll-indicator" id="section02" data-scroll-indicator-title="Why Water Testing Should be Important To You"></div>
+</div>
+
 <section class="text-lg-left dark-grey-text" style="position:absolute;margin-top:500px;">
 
   <div class="row" style="margin-bottom:70px;">
   
     <div class="col-md-3" style="margin-top:60px;margin-left:80px;padding-right:20px;">
-      <h3 class="font-weight-bold ">Why Water Testing Should be Important To You</h3>
+      <h2 class="font-weight-bold ">Why Water Testing Should be Important To You</h2>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam, doloremque laborum.
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam, doloremque laborum.
@@ -155,7 +166,7 @@
     <div class="row" style="margin-bottom:70px;">
     
       <div class="col-md-3" style="margin-top:100px;margin-left:30px;">
-        <h3 class="font-weight-bold ">Why Water Testing Should be Important To You</h3>
+        <h2 class="font-weight-bold ">Why Water Testing Should be Important To You</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam, doloremque laborum.
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam, doloremque laborum.
@@ -188,10 +199,15 @@
 
     </section>
 
+    <!-- Scroll Indicator 3-->
+    <div>
+      <div class="scroll-indicator" id="section03" data-scroll-indicator-title="What People Have People Said About Us."></div>
+    </div>
+
     <section style="position:absolute;height:300px;margin-top:1900px;margin-left:15%;margin-right:5%;">
 
       <div class="d-flex">
-        <h1 style="padding-right:500px">What People Have People Said About Us.</h1>
+        <h1 style="padding-right:700px">What People Have People Said About Us.</h1>
       </div>
 
       <div class="carousel" id="reviews-carousel" data-flickity='{ "cellAlign": "left", "freeScroll": true, "contain": true, "prevNextButtons": false, "wrapAround": true  }'>
@@ -272,6 +288,12 @@
 
     </div>
 
+      <!-- Scroll Indicator 4-->
+      <div>
+        <div class="scroll-indicator" id="section04" data-scroll-indicator-title="Dont know what water test you need? Let us help you."></div>
+      </div>
+
+
     <div class="text-center" style="margin-top:100px;" >
       Dont know what water test you need? Let us help you.
     </div>
@@ -281,6 +303,10 @@
     </div>
 
     </section> 
+
+    <div>
+      <div class="scroll-indicator" id="section07" data-scroll-indicator-title="Why Water Testing Should be Important To You"></div>
+    </div>
 
     <section style="position:relative;height:600px;margin-top;800px;margin-left:15%;margin-right:15%;">
     
@@ -426,6 +452,11 @@
 
     </section> 
 
+    <!-- Scroll Indicator 5-->
+    <div>
+      <div class="scroll-indicator" id="section05" data-scroll-indicator-title="Have the knowledge to take action."></div>
+    </div>
+
     
     <section style="position:relative;height:300px;margin-top:300px;">
   
@@ -470,7 +501,7 @@
                      </div>
                   </div>
                   <div class="col-md-8 pl-3">
-                    <h1>Xperiential Laboratories</h1>
+                    <h2 class="white-text">Xperiential Laboratories</h2>
                     <p>We at Xperiential Laboratories believe that eveyone</p>
                     <p>deserves safe, clean water - no exceptions</p>
                     <div>
@@ -542,5 +573,10 @@
 </html>
 
 <script>
-
+easyScrollDots({
+  'fixedNav': false,
+  'fixedNavId': '',
+  'fixedNavUpward': false,
+  'offset': 0
+});
 </script>
