@@ -66,13 +66,14 @@ function easyScrollDots(dotfixedOptions) {
 
         scrollIndiElems.forEach(function (e, i) {
             const scrollIndiId = e.getAttribute('id');
-            const scrollIndiTitle = e.getAttribute('data-scroll-indicator-title');
+            //const scrollIndiTitle = e.getAttribute('data-scroll-indicator-title');
+            const scrollIndiTitle = "";
             let firstActiveClass = '';
 
             if (i == 0) {
                 firstActiveClass = 'active';
             }
-            scrollIndiController.lastElementChild.insertAdjacentHTML('afterend', '<div class="' + firstActiveClass + '" data-indi-controller-id="' + scrollIndiId + '" onclick="scrollIndiClicked(\'' + scrollIndiId + '\');"><span>' + scrollIndiTitle + '</span><div></div></div>');
+           scrollIndiController.lastElementChild.insertAdjacentHTML('afterend', '<div class="' + firstActiveClass + '" data-indi-controller-id="' + scrollIndiId + '" onclick="scrollIndiClicked(\'' + scrollIndiId + '\');"><span>' + scrollIndiTitle + '</span><div></div></div>');
         });
 
         const scrollIndiControllerDots = scrollIndiController.querySelectorAll('[data-indi-controller-id]');
