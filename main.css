@@ -218,18 +218,16 @@ footer p, a {
 }
 footer h6 {
   font-family: 'Montserrat', serif;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   position: relative;
 }
 
 footer h6:after {
   position: absolute;
-  content: "";
-  background: white;
   width: 12%;
   height: 1px;
   left: 0;
-  bottom: -20px;
+  bottom: 2px;
 }
 
 .btn-footer {
